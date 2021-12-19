@@ -1,1 +1,8 @@
-
+def medians(nums1, nums2):
+   result = [j for i in [nums1, nums2] for j in i]
+   result.sort()
+   nums = sorted(result)
+   middle1 = (len(nums) - 1) // 2
+   middle2 = len(nums) // 2
+   return (nums[middle1] + nums[middle2]) / 2
+   print(medians(result))
